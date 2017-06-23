@@ -28,7 +28,7 @@ At a high level, you're going to create an accounting API in Rails (http://edgeg
 1. Accounts - accounts can be created by POSTing to the `/accounts` endpoint, and shown by GETting `/accounts/id`
 1. Deposits/Withdrawals - can be created by POSTing to `/accounts/:id/deposit` with a (json) body of `{amount: 1}` or `/accounts/:id/withdraw`.
 
-####
+#### Notes
 
 1. The account should not be able to be overdrawn
 1. An attempted overdraft should return an error status (422)
